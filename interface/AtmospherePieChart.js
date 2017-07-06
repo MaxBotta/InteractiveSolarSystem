@@ -7,11 +7,13 @@ function atmospherePieChart() {
     var interface = document.getElementById("interface");
     var container = document.createElement("div");
     container.setAttribute("id", "atmosphereContainer");
-    container.style.width = "auto";
-    container.style.height = "auto";
-    container.style.border = "1px solid black";
-    container.style.textAlign = "center";
-    container.style.margin = "100px";
+    container.style.width = "450px";
+    container.style.height = "450px";
+    container.style.border = "1px solid red";
+    container.style.top = "50%";
+    container.style.left = "50%";
+    container.style.margin = "-225px 0 0 -225px";
+    container.style.position = "absolute";
 
 
     interface.appendChild(container);
