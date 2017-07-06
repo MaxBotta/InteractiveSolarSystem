@@ -18,11 +18,17 @@ function openTools() {
 
 function mars() {
     var planet = document.getElementById("planet");
-    planet.src = "pictures/Mars.gif";
+    $( "#planet" ).fadeOut( "slow", function() {
+    planet.data = "pictures/Mars.svg";
+    }).fadeIn( "slow", function() {});
 }
-function neptun() {
+function jupiter() {
     var planet = document.getElementById("planet");
-    planet.src = "pictures/Neptun.gif";
+    $( "#planet" ).fadeOut( "slow", function() {
+        planet.data = "pictures/Jupiter.svg";
+    }).fadeIn( "slow", function() {});
+
+    console.log("hallo");
 }
 
 function allowDrop(ev) {

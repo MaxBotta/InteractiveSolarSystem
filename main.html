@@ -6,19 +6,22 @@
             <link rel="stylesheet" href="style.css">
     <script src="interface/Interface.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js"></script>
     <script src="interface/tools.js"></script>
     <script src="interface/AtmospherePieChart.js"></script>
+
     </head>
     <body>
 
     <div id="interface">
         <div id="planetContainer">
-            <img id="planet" src="pictures/Mars.gif">
+            <!--<img id="planet" src="pictures/Mars.gif">-->
+            <object id="planet" data="pictures/Mars.svg" type="image/svg+xml"></object>
         </div>
 
         <div id="iconsContainer">
-            <img onclick="mars()" id="marsIcon" class="icon" src="pictures/MarsIcon.gif">
-            <img onclick="neptun()" id="neptunIcon" class="icon" src="pictures/NeptunIcon.gif">
+            <img onmouseover="mars()" id="marsIcon" class="icon" src="pictures/MarsIcon.gif">
+            <img onmouseover="jupiter()" id="jupiterIcon" class="icon" src="pictures/NeptunIcon.gif">
         </div>
     </div>
 

@@ -118,7 +118,7 @@ function atmospherePieChart() {
 
         var path = d3.select("#atmosphereContainer").selectAll("path").data(pie);
         //path.attr("d", arc);
-        path.transition().duration(500).attrTween("d" ,arcTween);
+        path.transition().duration(1000).attrTween("d" ,arcTween);
 
 //        d3.selectAll("text").data(pie).attr("transform", function (d) {
 //            return "translate(" + labelArc.centroid(d) + ")";
@@ -142,7 +142,7 @@ function atmospherePieChart() {
             change();
         });
 
-    d3.select("#neptunIcon")
+    d3.select("#jupiterIcon")
         .on("mouseover", function () {
 
             data[0].gasanteil = dataNeptun[0].gasanteil;
