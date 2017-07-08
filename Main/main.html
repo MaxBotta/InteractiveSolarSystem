@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InterfaceTest</title>
+
+
+    <!--D3js Version 4-->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../Main/moonphases.js"></script>
+
+    <link rel="stylesheet" href="styleMain.css">
+
+
+</head>
+
+
+<body>
+<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#header">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#erdeContainer">Erde</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="../interface/interface.html">Interface</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="header" class="jumbotron text-center">
+    <h1>OUR SOLAR SYSTEM</h1>
+    <p>An interactive Website</p>
+</div>
+
+
+<div id="main" class="container-fluid">
+    <div id="erdeContainer" class="row">
+        <div class="col-sm-6">
+            <div id="erdeDiv">
+                <object id="erde" data="../pictures/erde.svg" type="image/svg+xml"></object>
+            </div>
+            <div id="mondDiv">
+                <object id="mond" data="../pictures/mond5.svg" type="image/svg+xml"></object>
+            </div>
+
+        </div>
+        <div id="erdeText" class="col-sm-6 textContainer">
+            <h1>Die Erde</h1>
+            <p>Die Erde ist der dichteste, fünftgrößte und der Sonne drittnächste
+                Planet des Sonnensystems. Sie ist Ursprungsort und Heimat aller
+                bekannten Lebewesen. Ihr Durchmesser beträgt über 12.700 Kilometer
+                und ihr Alter etwa 4,6 Milliarden Jahre.</p>
+            <br>
+            <br>
+            <h1>Der Mond</h1>
+            <p>Der Mond (lateinisch luna) ist der einzige natürliche Satellit der
+                Erde. Sein Name ist etymologisch verwandt mit Monat und bezieht
+                sich auf die Periode seines Phasenwechsels. Weil aber die Trabanten
+                anderer Planeten des Sonnensystems im übertragenen Sinn meistens
+                ebenfalls als Monde bezeichnet werden, spricht man zur Vermeidung
+                von Verwechslungen mitunter vom Erdmond. Er ist mit einem Durchmesser
+                von 3476 km der fünftgrößte Mond des Sonnensystems.</p>
+
+        </div>
+
+    </div>
+
+
+</div>
+<script>
+moonphases();
+</script>
+
+</body>
+</html>

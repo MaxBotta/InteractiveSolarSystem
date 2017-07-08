@@ -1,0 +1,97 @@
+
+.jumbotron {
+    background-color: #202e3b;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+#main {
+    top: 100vh;
+    position: relative;
+    height: 300vh;
+}
+
+.row {
+    /*padding: 50px 0px;*/
+
+
+}
+
+.col-sm-6 {
+    border: 1px solid red;
+    height: 100%;
+
+}
+.textContainer {
+    font-family: Montserrat, sans-serif;
+    color: #202e3b;
+}
+
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #202e3b;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: white !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: white !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: white !important;
+}
+
+#erdeContainer {
+    background-color: #efeae7;
+
+}
+
+
+#erdeDiv {
+    margin-top: 25%;
+    margin-left: 25%;
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+#erde {
+    width: 300px;
+    height: 300px;
+}
+#mondDiv {
+    margin-top: 10%;
+    margin-left: 75%;
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+#mond {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    position: relative;
+}
+
+#erdeText {
+    padding: 50px 25px;
+}
