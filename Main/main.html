@@ -14,15 +14,23 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    //Meine JavaScript Dateien
     <script src="../Main/moonphases.js"></script>
+    <script src="../Main/diashow.js"></script>
+    <script src="../Main/setFontSize.js"></script>
+    <script src="../Main/cookies.js"></script>
 
+    //Meine Stylesheets
     <link rel="stylesheet" href="styleMain.css">
-
-
 </head>
 
 
 <body>
+<script>
+    fontSize = getCookie();
+    document.body.style.fontSize = fontSize;
+</script>
 <nav id="navigation" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -78,15 +86,50 @@
                 ebenfalls als Monde bezeichnet werden, spricht man zur Vermeidung
                 von Verwechslungen mitunter vom Erdmond. Er ist mit einem Durchmesser
                 von 3476 km der fünftgrößte Mond des Sonnensystems.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div id="diashowContainer" class="col-sm-12">
+            <div id="diashow">
+                <div class="slide">
+                    <img src="../pictures/mars1.jpg" style="width: 100%;">
+                    <div class="caption"><h2>Marsoberfläche</h2></div>
+                </div>
+                <div class="slide">
+                    <img src="../pictures/mars2.jpg" style="width: 100%;">
+                    <div class="caption"><h2>Marsoberfläche</h2></div>
+                </div>
+                <div class="slide">
+                    <img src="../pictures/mars3.jpg" style="width: 100%;">
+                    <div class="caption"><h2>Marsoberfläche</h2></div>
+                </div>
+
+
+            </div>
+            <div id="links">
+                <img id="arrowleft" class="arrow" src="../pictures/links.gif">
+                <img  class="arrow2" src="../pictures/links.gif">
+            </div>
+            <div id="rechts">
+                <img id="arrowRight" class="arrow" src="../pictures/rechts.gif">
+                <img  id="shadowRight" class="arrow2" src="../pictures/rechts.gif">
+            </div>
+
+            <div id="diashowDots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
 
         </div>
-
     </div>
 
 
 </div>
 <script>
-moonphases();
+    setFontSize();
+    moonphases();
+    diashow();
 </script>
 
 </body>

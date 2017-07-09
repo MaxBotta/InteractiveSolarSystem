@@ -19,13 +19,13 @@ function openTools() {
 function mars() {
     var planet = document.getElementById("planet");
     $( "#planet" ).fadeOut( "slow", function() {
-    planet.data = "pictures/Mars.svg";
+    planet.data = "Mars.svg";
     }).fadeIn( "slow", function() {});
 }
 function jupiter() {
     var planet = document.getElementById("planet");
     $( "#planet" ).fadeOut( "slow", function() {
-        planet.data = "pictures/Jupiter.svg";
+        planet.data = "Jupiter.svg";
     }).fadeIn( "slow", function() {});
 
     console.log("hallo");
