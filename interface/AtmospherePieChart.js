@@ -26,20 +26,17 @@ function atmospherePieChart() {
         {name: "CO", gasanteil: 0.06}];
 
     var dataNeptun = [
-        {name: "H2", gasanteil: 80},
-        {name: "He", gasanteil: 19},
-        {name: "CH4", gasanteil: 1.5}];
+        {name: "Wasserstoff", gasanteil: 80},
+        {name: "Helium", gasanteil: 19},
+        {name: "Methan", gasanteil: 1}];
 
 
     var data = [
-        {name: "H2", gasanteil: 1},
-        {name: "He", gasanteil: 1},
-        {name: "CH4", gasanteil: 1},
-        {name: "CO2", gasanteil: 1},
-        {name: "Ar", gasanteil: 1},
-        {name: "N2", gasanteil: 1},
-        {name: "O2", gasanteil: 1},
-        {name: "CO", gasanteil: 1}];
+        {name: "Stickstoff", gasanteil: 78.08},
+        {name: "Sauerstoff", gasanteil: 20.95},
+        {name: "Argon", gasanteil: 0.93},
+        {name: "Kohlenstoffdioxid", gasanteil: 0.038},
+        {name: "Neon", gasanteil: 0.002}];
 
     console.log(data);
 

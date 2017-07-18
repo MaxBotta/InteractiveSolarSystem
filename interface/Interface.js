@@ -16,19 +16,57 @@ function openTools() {
     tools.style.height = "100%";
 }
 
+function merkur() {
+    var planet = document.getElementById("planet");
+    $( "#planet" ).fadeOut( "fast", function() {
+        planet.data = "pics/merkur.svg";
+    }).fadeIn( "slow", function() {});
+}
+function venus() {
+    var planet = document.getElementById("planet");
+    $( "#planet" ).fadeOut( "fast", function() {
+        planet.data = "pics/venus.svg";
+    }).fadeIn( "slow", function() {});
+
+}
+
+function erde() {
+    var planet = document.getElementById("planet");
+    $( "#planet" ).fadeOut( "fast", function() {
+        planet.data = "pics/erde.svg";
+    }).fadeIn( "slow", function() {});
+}
+
 function mars() {
     var planet = document.getElementById("planet");
     $( "#planet" ).fadeOut( "slow", function() {
-    planet.data = "Mars.svg";
+    planet.data = "pics/mars.svg";
     }).fadeIn( "slow", function() {});
 }
 function jupiter() {
     var planet = document.getElementById("planet");
     $( "#planet" ).fadeOut( "slow", function() {
-        planet.data = "Jupiter.svg";
+        planet.data = "pics/jupiter.svg";
     }).fadeIn( "slow", function() {});
 
-    console.log("hallo");
+}
+function saturn() {
+    var planet = document.getElementById("planet");
+    $( "#planet" ).fadeOut( "slow", function() {
+        planet.data = "pics/saturn.svg";
+    }).fadeIn( "slow", function() {});
+}
+function uranus() {
+    var planet = document.getElementById("planet");
+    $( "#planet" ).fadeOut( "slow", function() {
+        planet.data = "pics/uranus.svg";
+    }).fadeIn( "slow", function() {});
+}
+function neptun() {
+    var planet = document.getElementById("planet");
+    $( "#planet" ).fadeOut( "slow", function() {
+        planet.data = "pics/neptun.svg";
+    }).fadeIn( "slow", function() {});
 }
 
 function allowDrop(ev) {

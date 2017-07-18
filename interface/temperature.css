@@ -1,0 +1,23 @@
+.bar--positive {
+    fill: #FF6961;
+}
+
+.bar--negative {
+    fill: #AEFBFF;
+}
+
+.axis text {
+    fill: white;
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: white;
+    shape-rendering: crispEdges;
+}
+#tempTitle {
+    fill: white;
+    font: 14px sans-serif;
+}

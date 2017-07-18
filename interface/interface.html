@@ -1,35 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-            <meta charset="UTF-8">
-            <title>InterfaceTest</title>
-            <link rel="stylesheet" href="interfaceStyle.css">
+    <meta charset="UTF-8">
+    <title>InterfaceTest</title>
+    <link rel="stylesheet" href="interfaceStyle.css">
+    <link rel="stylesheet" href="temperature.css">
     <script src="Interface.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="tools.js"></script>
+    <!--<script src="tools.js"></script>-->
     <script src="AtmospherePieChart.js"></script>
+    <script src="AtmospherePieChart2.js"></script>
+    <script src="temperature.js"></script>
 
-    </head>
-    <body>
 
-    <div id="interface">
-        <div id="planetContainer">
-            <!--<img id="planet" src="pictures/Mars.gif">-->
-            <object id="planet" data="Mars.svg" type="image/svg+xml"></object>
-        </div>
+</head>
+<body>
 
-        <div id="iconsContainer">
-            <img onmouseover="mars()" id="marsIcon" class="icon" src="../pictures/MarsIcon.gif">
-            <img onmouseover="jupiter()" id="jupiterIcon" class="icon" src="../pictures/NeptunIcon.gif">
-        </div>
+
+<div id="interface">
+    <div id="planetContainer">
+        <!--<img id="planet" src="pictures/Mars.gif">-->
+        <object id="planet" data="pics/merkur.svg" type="image/svg+xml"></object>
     </div>
 
-    <script>
+    <div id="iconsContainer">
+        <img onmouseover="merkur()" id="merkurIcon" class="icon" src="../pictures/mars2Icon.gif">
+        <img onmouseover="venus()" id="venusIcon" class="icon" src="../pictures/venusIcon.gif">
+        <img onmouseover="erde()" id="erdeIcon" class="icon" src="../pictures/erdeIcon.gif">
+        <img onmouseover="mars()" id="marsIcon" class="icon" src="../pictures/mars2Icon.gif">
+        <img onmouseover="jupiter()" id="jupiterIcon" class="icon" src="../pictures/jupiterIcon.gif">
+        <img onmouseover="saturn()" id="saturnIcon" class="icon" src="../pictures/saturnIcon.gif">
+        <img onmouseover="uranus()" id="uranusIcon" class="icon" src="../pictures/uranusIcon.gif">
+        <img onmouseover="neptun()" id="neptunIcon" class="icon" src="../pictures/neptunIcon.gif">
+    </div>
+    <div id="toolsInactive" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="toolHeader">
+            <p class="toolTitle">INACTIVE</p>
+        </div>
+        <div class="tool">
+            <img id="tempBild" class="toolBild" src="pics/temperatur.gif" draggable="true" draggable="true"
+                 ondragstart="drag(event)">
+        </div>
+        <div class="tool">
+            <img id="atmoBild" class="toolBild" src="pics/atmosphäre.gif" draggable="true" draggable="true"
+                 ondragstart="drag(event)">
+        </div>
+        <div class="tool">
+            <img id="infoBild" class="toolBild" src="pics/info.gif" draggable="true" draggable="true" ondragstart="drag(event)">
+        </div>
+    </div>
+    <div id="toolsActive" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="toolHeader">
+            <p class="toolTitle">ACTIVE</p>
+        </div>
+        <div class="tool">
+        </div>
+        <div class="tool">
+        </div>
+        <div class="tool">
+        </div>
+    </div>
+</div>
 
 
-        //tools();
-        atmospherePieChart();
-    </script>
+<script>
+    //tools();
+    //atmospherePieChart2();
+    //temperature();
+
+
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+        console.log("Erfolgreich");
+        if (data == "atmoBild") {
+            atmospherePieChart2();
+        } else if (data == "tempBild") {
+            temperature();
+        } else if (data == "infoBild") {
+
+        }
+
+    }
+
+
+</script>
 </body>
 </html>

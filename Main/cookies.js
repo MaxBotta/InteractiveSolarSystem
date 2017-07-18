@@ -19,5 +19,5 @@ function getCookie(cname) {
             return c.substring(name.length, c.length);
         }
     }
-    return "14px";
+    return "";
 }

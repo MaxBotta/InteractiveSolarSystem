@@ -15,43 +15,85 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    //Meine JavaScript Dateien
     <script src="../Main/moonphases.js"></script>
     <script src="../Main/diashow.js"></script>
     <script src="../Main/setFontSize.js"></script>
     <script src="../Main/cookies.js"></script>
 
-    //Meine Stylesheets
     <link rel="stylesheet" href="styleMain.css">
+    <link rel="stylesheet" href="navigation.css">
+
 </head>
 
 
 <body>
 <script>
-    fontSize = getCookie();
-    document.body.style.fontSize = fontSize;
+    //Schriftgröße aus dem Cookie auslesen bevor die Schriftgröße
+    // vom Stylesheet gesetzt wird
+    //Gibt es kein Cookie wird standardmäßig 14px gesetzt und ein
+    // Popup öffnet sich zur abfrage
+    if (getCookie() != "") {
+        fontSize = getCookie();
+        document.body.style.fontSize = fontSize;
+    }
+
 </script>
-<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#header">Logo</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#erdeContainer">Erde</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="../interface/interface.html">Interface</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+<!--<nav id="navigation" class="navbar navbar-default navbar-fixed-top">-->
+    <!--<div class="container">-->
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <!--<a class="navbar-brand" href="#header">Logo</a>-->
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse" id="myNavbar">-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a href="#erdeContainer">Erde</a></li>-->
+                <!--<li><a href="#services">SERVICES</a></li>-->
+                <!--<li><a href="#portfolio">PORTFOLIO</a></li>-->
+                <!--<li><a href="../interface/interface.html">Interface</a></li>-->
+                <!--<li><a href="#contact">CONTACT</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</nav>-->
+
+<!--<div id="navigation">-->
+    <!--<div class="dropdown">-->
+        <!--<button class="dropButton">Learn</button>-->
+        <!--<div class="dropdownContent">-->
+            <!--<a href="../interface/interface.html">INTERFACE</a>-->
+            <!--<button class="dropButton">Learn</button>-->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</div>-->
+<div id="navigation">
+    <ul id="navigation-menu">
+        <li><a href="#main">HOME</a></li>
+        <li><a href="#">LEARN</a>
+            <ul>
+                <li><a href="../interface/interface.html">INTERFACE</a></li>
+                <li><a href="#">PLANETS</a>
+                    <ul>
+                        <li><a href="#">MERKUR</a></li>
+                        <li><a href="#">VENUS</a></li>
+                        <li><a href="#">ERDE</a></li>
+                        <li><a href="#">MARS</a></li>
+                        <li><a href="#">JUPITER</a></li>
+                        <li><a href="#">SATURN</a></li>
+                        <li><a href="#">URANUS</a></li>
+                        <li><a href="#">NEPTUN</a></li>
+                    </ul>
+                </li>
             </ul>
-        </div>
-    </div>
-</nav>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
+    </ul>
+</div>
+
 
 <div id="header" class="jumbotron text-center">
     <h1>OUR SOLAR SYSTEM</h1>
@@ -60,35 +102,7 @@
 
 
 <div id="main" class="container-fluid">
-    <div id="erdeContainer" class="row">
-        <div class="col-sm-6">
-            <div id="erdeDiv">
-                <object id="erde" data="../pictures/erde.svg" type="image/svg+xml"></object>
-            </div>
-            <div id="mondDiv">
-                <object id="mond" data="../pictures/mond5.svg" type="image/svg+xml"></object>
-            </div>
-
-        </div>
-        <div id="erdeText" class="col-sm-6 textContainer">
-            <h1>Die Erde</h1>
-            <p>Die Erde ist der dichteste, fünftgrößte und der Sonne drittnächste
-                Planet des Sonnensystems. Sie ist Ursprungsort und Heimat aller
-                bekannten Lebewesen. Ihr Durchmesser beträgt über 12.700 Kilometer
-                und ihr Alter etwa 4,6 Milliarden Jahre.</p>
-            <br>
-            <br>
-            <h1>Der Mond</h1>
-            <p>Der Mond (lateinisch luna) ist der einzige natürliche Satellit der
-                Erde. Sein Name ist etymologisch verwandt mit Monat und bezieht
-                sich auf die Periode seines Phasenwechsels. Weil aber die Trabanten
-                anderer Planeten des Sonnensystems im übertragenen Sinn meistens
-                ebenfalls als Monde bezeichnet werden, spricht man zur Vermeidung
-                von Verwechslungen mitunter vom Erdmond. Er ist mit einem Durchmesser
-                von 3476 km der fünftgrößte Mond des Sonnensystems.</p>
-        </div>
-    </div>
-    <div class="row">
+    <div id="diashowRow" class="row">
         <div id="diashowContainer" class="col-sm-12">
             <div id="diashow">
                 <div class="slide">
@@ -108,11 +122,11 @@
             </div>
             <div id="links">
                 <img id="arrowleft" class="arrow" src="../pictures/links.gif">
-                <img  class="arrow2" src="../pictures/links.gif">
+                <img class="arrow2" src="../pictures/links.gif">
             </div>
             <div id="rechts">
                 <img id="arrowRight" class="arrow" src="../pictures/rechts.gif">
-                <img  id="shadowRight" class="arrow2" src="../pictures/rechts.gif">
+                <img id="shadowRight" class="arrow2" src="../pictures/rechts.gif">
             </div>
 
             <div id="diashowDots">
@@ -121,6 +135,64 @@
                 <span class="dot"></span>
             </div>
 
+        </div>
+    </div>
+    <div id="merkurContainer" class="row planetContainer">
+        <div  class="col-sm-5 textContainer">
+            <h1>Die Erde</h1>
+            <p>Die Erde ist der dichteste, fünftgrößte und der Sonne drittnächste
+                Planet des Sonnensystems. Sie ist Ursprungsort und Heimat aller
+                bekannten Lebewesen. Ihr Durchmesser beträgt über 12.700 Kilometer
+                und ihr Alter etwa 4,6 Milliarden Jahre.</p>
+            <br>
+            <br>
+            <h1>Der Mond</h1>
+            <p>Der Mond (lateinisch luna) ist der einzige natürliche Satellit der
+                Erde. Sein Name ist etymologisch verwandt mit Monat und bezieht
+                sich auf die Periode seines Phasenwechsels. Weil aber die Trabanten
+                anderer Planeten des Sonnensystems im übertragenen Sinn meistens
+                ebenfalls als Monde bezeichnet werden, spricht man zur Vermeidung
+                von Verwechslungen mitunter vom Erdmond. Er ist mit einem Durchmesser
+                von 3476 km der fünftgrößte Mond des Sonnensystems.</p>
+        </div>
+        <div class="col-sm-7">
+            <div id="merkurDiv">
+                <object id="merkur" data="../interface/pics/merkur.svg" type="image/svg+xml"></object>
+            </div>
+        </div>
+    </div>
+    <div class="row filler">
+
+    </div>
+
+    <div id="erdeContainer" class="row planetContainer">
+        <div id="erde_mond" class="col-sm-7">
+
+                <div id="erdeDiv">
+                    <object id="erde" data="../interface/pics/erde.svg" type="image/svg+xml"></object>
+                </div>
+                <div id="mondDiv">
+                    <object id="mond" data="../pictures/mond5.svg" type="image/svg+xml"></object>
+                </div>
+
+
+        </div>
+        <div id="erdeText" class="col-sm-5 textContainer">
+            <h1>Die Erde</h1>
+            <p>Die Erde ist der dichteste, fünftgrößte und der Sonne drittnächste
+                Planet des Sonnensystems. Sie ist Ursprungsort und Heimat aller
+                bekannten Lebewesen. Ihr Durchmesser beträgt über 12.700 Kilometer
+                und ihr Alter etwa 4,6 Milliarden Jahre.</p>
+            <br>
+            <br>
+            <h1>Der Mond</h1>
+            <p>Der Mond (lateinisch luna) ist der einzige natürliche Satellit der
+                Erde. Sein Name ist etymologisch verwandt mit Monat und bezieht
+                sich auf die Periode seines Phasenwechsels. Weil aber die Trabanten
+                anderer Planeten des Sonnensystems im übertragenen Sinn meistens
+                ebenfalls als Monde bezeichnet werden, spricht man zur Vermeidung
+                von Verwechslungen mitunter vom Erdmond. Er ist mit einem Durchmesser
+                von 3476 km der fünftgrößte Mond des Sonnensystems.</p>
         </div>
     </div>
 
