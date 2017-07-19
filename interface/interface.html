@@ -25,16 +25,16 @@
     </div>
 
     <div id="iconsContainer">
-        <img onmouseover="merkur()" id="merkurIcon" class="icon" src="../pictures/mars2Icon.gif">
-        <img onmouseover="venus()" id="venusIcon" class="icon" src="../pictures/venusIcon.gif">
-        <img onmouseover="erde()" id="erdeIcon" class="icon" src="../pictures/erdeIcon.gif">
-        <img onmouseover="mars()" id="marsIcon" class="icon" src="../pictures/mars2Icon.gif">
-        <img onmouseover="jupiter()" id="jupiterIcon" class="icon" src="../pictures/jupiterIcon.gif">
-        <img onmouseover="saturn()" id="saturnIcon" class="icon" src="../pictures/saturnIcon.gif">
-        <img onmouseover="uranus()" id="uranusIcon" class="icon" src="../pictures/uranusIcon.gif">
-        <img onmouseover="neptun()" id="neptunIcon" class="icon" src="../pictures/neptunIcon.gif">
+        <img onclick="merkur()" id="merkurIcon" class="icon" src="../pictures/mars2Icon.gif">
+        <img onclick="venus()" id="venusIcon" class="icon" src="../pictures/venusIcon.gif">
+        <img onclick="erde()" id="erdeIcon" class="icon" src="../pictures/erdeIcon.gif">
+        <img onclick="mars()" id="marsIcon" class="icon" src="../pictures/mars2Icon.gif">
+        <img onclick="jupiter()" id="jupiterIcon" class="icon" src="../pictures/jupiterIcon.gif">
+        <img onclick="saturn()" id="saturnIcon" class="icon" src="../pictures/saturnIcon.gif">
+        <img onclick="uranus()" id="uranusIcon" class="icon" src="../pictures/uranusIcon.gif">
+        <img onclick="neptun()" id="neptunIcon" class="icon" src="../pictures/neptunIcon.gif">
     </div>
-    <div id="toolsInactive" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div id="toolsInactive" ondrop="dropInactive(event)" ondragover="allowDrop(event)">
         <div class="toolHeader">
             <p class="toolTitle">INACTIVE</p>
         </div>
@@ -50,7 +50,7 @@
             <img id="infoBild" class="toolBild" src="pics/info.gif" draggable="true" draggable="true" ondragstart="drag(event)">
         </div>
     </div>
-    <div id="toolsActive" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div id="toolsActive" ondrop="dropActive(event)" ondragover="allowDrop(event)">
         <div class="toolHeader">
             <p class="toolTitle">ACTIVE</p>
         </div>
@@ -78,15 +78,43 @@
         ev.dataTransfer.setData("text", ev.target.id);
     }
 
-    function drop(ev) {
+    var atmo = false;
+    var temp = false;
+    var info = false;
+
+    function dropInactive(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+
+        if (data == "atmoBild") {
+            var atmosphereContainer = document.getElementById("atmosphereContainer");
+            atmosphereContainer.parentNode.removeChild(atmosphereContainer);
+            atmo = false;
+
+        } else if (data == "tempBild") {
+            var popupTemp = document.getElementById("popupTemp");
+            popupTemp.parentNode.removeChild(popupTemp);
+            temp = false;
+
+        } else if (data == "infoBild") {
+
+        }
+
+    }
+
+    function dropActive(ev) {
         ev.preventDefault();
         var data = ev.dataTransfer.getData("text");
         ev.target.appendChild(document.getElementById(data));
         console.log("Erfolgreich");
-        if (data == "atmoBild") {
+
+        if (data == "atmoBild" && atmo == false) {
             atmospherePieChart2();
-        } else if (data == "tempBild") {
-            temperature();
+            atmo = true;
+        } else if (data == "tempBild" && temp == false) {
+                temperature();
+                temp = true;
         } else if (data == "infoBild") {
 
         }

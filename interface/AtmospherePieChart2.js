@@ -241,49 +241,49 @@ function atmospherePieChart2() {
     }
 
     d3.select("#merkurIcon")
-        .on("mouseover", function () {
+        .on("click", function () {
             data = merkur;
             change();
         });
 
     d3.select("#venusIcon")
-        .on("mouseover", function () {
+        .on("click", function () {
             data = venus;
             change();
         });
 
     d3.select("#erdeIcon")
-        .on("mouseover", function () {
+        .on("click", function () {
             data = erde;
             change();
         });
 
     d3.select("#marsIcon")
-        .on("mouseover", function () {
+        .on("click", function () {
             data = mars;
             change();
         });
 
     d3.select("#jupiterIcon")
-        .on("mouseover", function () {
+        .on("click", function () {
             data = jupiter;
             change();
         });
 
     d3.select("#saturnIcon")
-        .on("mouseover", function () {
+        .on("click", function () {
             data = saturn;
             change();
         });
 
     d3.select("#uranusIcon")
-        .on("mouseover", function () {
+        .on("click", function () {
             data = uranus;
             change();
         });
 
     d3.select("#neptunIcon")
-        .on("mouseover", function () {
+        .on("click", function () {
             data = neptun;
             change();
         });

@@ -44,55 +44,77 @@
     float: left;
     width: 15px;
     margin-top: 17.5px;
-
 }
+#merkurIcon:hover {
+    opacity: 0.5;
+}
+
 #venusIcon {
     float: left;
     width: 20px;
     margin-top: 15px;
-
 }
+#venusIcon:hover {
+    opacity: 0.5;
+}
+
 #erdeIcon {
     float: left;
     width: 25px;
     margin-top: 12.5px;
-
+}
+#erdeIcon:hover {
+    opacity: 0.5;
 }
 
 #marsIcon {
     float: left;
     width: 20px;
     margin-top: 15px;
-
 }
+#marsIcon:hover {
+    opacity: 0.5;
+}
+
 #jupiterIcon {
     float: left;
     width: 50px;
-
 }
+#jupiterIcon:hover {
+    opacity: 0.5;
+}
+
 #saturnIcon {
     float: left;
     width: 40px;
     margin-top: 5px;
-
 }
+#saturnIcon:hover {
+    opacity: 0.5;
+}
+
 #uranusIcon {
     float: left;
     width: 35px;
     margin-top: 7.5px;
-
 }
+#uranusIcon:hover {
+    opacity: 0.5;
+}
+
 #neptunIcon {
     float: left;
     width: 35px;
     margin-top: 7.5px;
-
+}
+#neptunIcon:hover {
+    opacity: 0.5;
 }
 
 #toolsActive {
     position: absolute;
     float: right;
-    top: 80%;
+    bottom: 3%;
     right: 3%;
     height: 130px;
     width: 300px;
@@ -102,7 +124,7 @@
 #toolsInactive {
     position: absolute;
     float: right;
-    top: 80%;
+    bottom: 3%;
     left: 3%;
     height: 130px;
     width: 300px;

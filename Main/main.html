@@ -39,35 +39,35 @@
 
 </script>
 <!--<nav id="navigation" class="navbar navbar-default navbar-fixed-top">-->
-    <!--<div class="container">-->
-        <!--<div class="navbar-header">-->
-            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-            <!--</button>-->
-            <!--<a class="navbar-brand" href="#header">Logo</a>-->
-        <!--</div>-->
-        <!--<div class="collapse navbar-collapse" id="myNavbar">-->
-            <!--<ul class="nav navbar-nav navbar-right">-->
-                <!--<li><a href="#erdeContainer">Erde</a></li>-->
-                <!--<li><a href="#services">SERVICES</a></li>-->
-                <!--<li><a href="#portfolio">PORTFOLIO</a></li>-->
-                <!--<li><a href="../interface/interface.html">Interface</a></li>-->
-                <!--<li><a href="#contact">CONTACT</a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
+<!--<div class="container">-->
+<!--<div class="navbar-header">-->
+<!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
+<!--<span class="icon-bar"></span>-->
+<!--<span class="icon-bar"></span>-->
+<!--<span class="icon-bar"></span>-->
+<!--</button>-->
+<!--<a class="navbar-brand" href="#header">Logo</a>-->
+<!--</div>-->
+<!--<div class="collapse navbar-collapse" id="myNavbar">-->
+<!--<ul class="nav navbar-nav navbar-right">-->
+<!--<li><a href="#erdeContainer">Erde</a></li>-->
+<!--<li><a href="#services">SERVICES</a></li>-->
+<!--<li><a href="#portfolio">PORTFOLIO</a></li>-->
+<!--<li><a href="../interface/interface.html">Interface</a></li>-->
+<!--<li><a href="#contact">CONTACT</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
 <!--</nav>-->
 
 <!--<div id="navigation">-->
-    <!--<div class="dropdown">-->
-        <!--<button class="dropButton">Learn</button>-->
-        <!--<div class="dropdownContent">-->
-            <!--<a href="../interface/interface.html">INTERFACE</a>-->
-            <!--<button class="dropButton">Learn</button>-->
-        <!--</div>-->
-    <!--</div>-->
+<!--<div class="dropdown">-->
+<!--<button class="dropButton">Learn</button>-->
+<!--<div class="dropdownContent">-->
+<!--<a href="../interface/interface.html">INTERFACE</a>-->
+<!--<button class="dropButton">Learn</button>-->
+<!--</div>-->
+<!--</div>-->
 
 <!--</div>-->
 <div id="navigation">
@@ -138,7 +138,7 @@
         </div>
     </div>
     <div id="merkurContainer" class="row planetContainer">
-        <div  class="col-sm-5 textContainer">
+        <div class="col-sm-5 textContainer">
             <h1>Die Erde</h1>
             <p>Die Erde ist der dichteste, fünftgrößte und der Sonne drittnächste
                 Planet des Sonnensystems. Sie ist Ursprungsort und Heimat aller
@@ -168,12 +168,12 @@
     <div id="erdeContainer" class="row planetContainer">
         <div id="erde_mond" class="col-sm-7">
 
-                <div id="erdeDiv">
-                    <object id="erde" data="../interface/pics/erde.svg" type="image/svg+xml"></object>
-                </div>
-                <div id="mondDiv">
-                    <object id="mond" data="../pictures/mond5.svg" type="image/svg+xml"></object>
-                </div>
+            <div id="erdeDiv">
+                <object id="erde" data="../interface/pics/erde.svg" type="image/svg+xml"></object>
+            </div>
+            <div id="mondDiv">
+                <object id="mond" data="../pictures/mond5.svg" type="image/svg+xml"></object>
+            </div>
 
 
         </div>
@@ -196,12 +196,102 @@
         </div>
     </div>
 
+    <div id="formularContainer" class="row">
+        <div id="formTitle">
+            <h3>
+                Abonnieren Sie jetzt unser Magazin
+            </h3>
+        </div>
+        <div id="formular">
+            <form>
+                <div class="col-sm-6">
+                    Vorname<br>
+                    <input class="textInput" type="text" name="lastname" required="required"><br>
+                    Nachname<br>
+                    <input class="textInput" type="text" name="firstname" required="required"><br>
+                    Straße<br>
+                    <input class="textInput" type="text" name="street" required="required"><br>
+                    Ort<br>
+                    <input class="textInput" type="text" name="city" required="required"><br>
+                    Land<br>
+                    <input class="textInput" type="text" name="country" required="required"><br>
+                    PLZ<br>
+                    <input class="textInput" type="text" name="plz" required="required"><br>
+                    Telefon<br>
+                    <input class="textInput" type="text" name="phone"><br>
+                    E-Mail<br>
+                    <input class="textInput" type="text" name="email"><br><br>
+                    <input id="formSubmit" type="submit" value="Submit">
+                </div>
+                <div class="col-sm-6">
+                    <div class="formElement">
+                        <div class="radioInput">
+                            <input type="radio" value="12" name="months" checked>
+                            12 Monate Abo
+                        </div>
+                        <div class="radioInput">
+                            <input type="radio" value="6" name="months">
+                            6 Monate Abo
+                        </div>
+                    </div>
+                    <div id="preis">
+                        <div id="ohneMwst" class="formElement">
+                            <div class="overviewElement">
+                                EUR <input id="preisOhneMwst" class="priceOutput" type="text" size="3" name="preisOhneMwst" value="" disabled />
+                            </div>
+                            <div class="overviewElement">
+                                Summe ohne MwSt:
+                            </div>
+
+                        </div>
+                        <div id="mitMwst" class="formElement">
+                            <div class="overviewElement">
+                                EUR <input id="preisMitMwst" class="priceOutput" type="text" size="3" name="preisMitMwst" value="" disabled />
+                            </div>
+                            <div class="overviewElement">
+                                Summe mit MwSt:
+                            </div>
+
+                        </div>
+                        <div id="versand" class="formElement">
+                            <div class="overviewElement">
+                                EUR <input id="versandpreis" class="priceOutput" type="text" size="3" name="versandpreis" value="" disabled />
+                            </div>
+                            <div class="overviewElement">
+                                Versand:
+                            </div>
+                        </div>
+                        <div id="gesamt" class="formElement">
+                            <div class="overviewElement">
+                                EUR <input id="gesamtpreis" class="priceOutput" type="text" size="3" name="gesamtpreis" value="" disabled />
+                            </div>
+                            <div class="overviewElement">
+                                Gesamt:
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
 
 </div>
 <script>
     setFontSize();
     moonphases();
     diashow();
+
+    function preisberechnung() {
+        var ohneMwst = document.getElementById("preisOhneMwst");
+        var mitMwst = document.getElementById("preisMitMwst");
+        //test
+        ohneMwst.value = "5";
+    }
+    preisberechnung();
 </script>
 
 </body>

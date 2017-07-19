@@ -255,5 +255,58 @@ body {
     margin-top: 20%;
     margin-left: 40%;
 }
+#formularContainer {
+    font-family: Montserrat, sans-serif;
+    color: #202e3b;
+    padding: 20px 200px;
+}
+#formTitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#formular {
+
+}
+.textInput {
+    width: 250px;
+    height: 30px;
+    border: 1px solid #202e3b;
+    border-radius: 5px;
+}
+.radioInput {
+    border: 1px solid red;
+    width: 50%;
+    float: right;
+}
+.col-sm-6 {
+    border: 1px solid red;
+}
+
+#formSubmit {
+    width: 250px;
+    height: 30px;
+    background-color: #202e3b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.formElement {
+    border: 1px solid red;
+    margin-top: 10px;
+    text-align: right;
+    min-height: 30px;
+}
+.overviewElement {
+    width: 50%;
+    border: 1px solid red;
+    float: right;
+}
+
+.priceOutput {
+    background-color: transparent;
+    border: none;
+    text-align: right;
+}
 
 
