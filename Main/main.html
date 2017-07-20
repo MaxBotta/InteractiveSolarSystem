@@ -19,6 +19,8 @@
     <script src="../Main/diashow.js"></script>
     <script src="../Main/setFontSize.js"></script>
     <script src="../Main/cookies.js"></script>
+    <script src="../Main/formular.js"></script>
+    <script src="../Main/textAkkordion.js"></script>
 
     <link rel="stylesheet" href="styleMain.css">
     <link rel="stylesheet" href="navigation.css">
@@ -36,7 +38,6 @@
         fontSize = getCookie();
         document.body.style.fontSize = fontSize;
     }
-
 </script>
 <!--<nav id="navigation" class="navbar navbar-default navbar-fixed-top">-->
 <!--<div class="container">-->
@@ -78,19 +79,25 @@
                 <li><a href="../interface/interface.html">INTERFACE</a></li>
                 <li><a href="#">PLANETS</a>
                     <ul>
-                        <li><a href="#">MERKUR</a></li>
-                        <li><a href="#">VENUS</a></li>
-                        <li><a href="#">ERDE</a></li>
-                        <li><a href="#">MARS</a></li>
-                        <li><a href="#">JUPITER</a></li>
-                        <li><a href="#">SATURN</a></li>
+                        <li><a href="#merkurContainer">MERKUR</a></li>
+                        <li><a href="#venusContainer">VENUS</a></li>
+                        <li><a href="#erdeContainer">ERDE</a></li>
+                        <li><a href="#marsContainer">MARS</a></li>
+                        <li><a href="#jupiterContainer">JUPITER</a></li>
+                        <li><a href="#saturnContainer">SATURN</a></li>
                         <li><a href="#">URANUS</a></li>
                         <li><a href="#">NEPTUN</a></li>
                     </ul>
                 </li>
             </ul>
         </li>
-        <li><a href="#"><span class="glyphicon glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
+        <li><a href="#formularContainer">ABONNIEREN</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+            <ul>
+                <li><a href="#">Schrift</a></li>
+            </ul>
+        </li>
+
     </ul>
 </div>
 
@@ -139,25 +146,77 @@
     </div>
     <div id="merkurContainer" class="row planetContainer">
         <div class="col-sm-5 textContainer">
-            <h1>Die Erde</h1>
-            <p>Die Erde ist der dichteste, fünftgrößte und der Sonne drittnächste
-                Planet des Sonnensystems. Sie ist Ursprungsort und Heimat aller
-                bekannten Lebewesen. Ihr Durchmesser beträgt über 12.700 Kilometer
-                und ihr Alter etwa 4,6 Milliarden Jahre.</p>
+            <h1>Merkur</h1>
+            <p id="merkurp1">Der Merkur ist mit einem Durchmesser von knapp 4880 Kilometern der
+                kleinste, mit einer durchschnittlichen Sonnenentfernung von etwa
+                58 Millionen Kilometern der sonnennächste und somit auch schnellste
+                Planet im Sonnensystem. Er hat mit einer maximalen Tagestemperatur
+                von rund +430 °C und einer Nachttemperatur bis −170 °C die größten
+                Temperaturschwankungen aller Planeten.</p>
             <br>
-            <br>
-            <h1>Der Mond</h1>
-            <p>Der Mond (lateinisch luna) ist der einzige natürliche Satellit der
-                Erde. Sein Name ist etymologisch verwandt mit Monat und bezieht
-                sich auf die Periode seines Phasenwechsels. Weil aber die Trabanten
-                anderer Planeten des Sonnensystems im übertragenen Sinn meistens
-                ebenfalls als Monde bezeichnet werden, spricht man zur Vermeidung
-                von Verwechslungen mitunter vom Erdmond. Er ist mit einem Durchmesser
-                von 3476 km der fünftgrößte Mond des Sonnensystems.</p>
+            <div class="p2click" onclick="">
+
+            </div>
+            <div class="p2">
+                <p id="merkurp2">
+                    Aufgrund seiner Größe und chemischen Zusammensetzung zählt er zu den
+                    erdähnlichen Planeten. Wegen seiner Sonnennähe ist er von der Erde aus
+                    schwer zu beobachten, da er nur einen maximalen Winkelabstand von etwa 28°
+                    von der Sonne erreicht. Freiäugig ist er nur maximal eine Stunde lang
+                    entweder am Abend- oder am Morgenhimmel zu sehen, teleskopisch hingegen
+                    auch tagsüber. Details auf seiner Oberfläche sind ab einer Fernrohröffnung
+                    von etwa 20 cm zu erkennen, wenn er der Erde viermal im Jahr relativ nahe
+                    steht. <br>
+                    Benannt ist der Merkur nach dem „Götterboten“ Mercurius, dem römischen
+                    Gott der Händler und Diebe. Sein astronomisches Symbol ist ☿.
+                </p>
+            </div>
         </div>
         <div class="col-sm-7">
             <div id="merkurDiv">
                 <object id="merkur" data="../interface/pics/merkur.svg" type="image/svg+xml"></object>
+            </div>
+        </div>
+    </div>
+    <div class="row filler">
+
+    </div>
+    <div id="venusContainer" class="row planetContainer">
+        <div class="col-sm-5 textContainer">
+            <h1>Die Erde</h1>
+            <p>Die Venus ist mit einer durchschnittlichen Sonnenentfernung von 108
+                Millionen Kilometern der zweitinnerste und mit einem Durchmesser von
+                ca. 12.100 Kilometern der drittkleinste Planet des Sonnensystems. Sie
+                zählt zu den vier erdähnlichen Planeten, die auch terrestrische oder
+                Gesteinsplaneten genannt werden. Die Venus ist der Planet, der auf
+                seiner Umlaufbahn der Erdbahn mit einem minimalen Abstand von 38
+                Millionen Kilometern am nächsten kommt. Sie hat fast die gleiche
+                Größe wie die Erde, unterscheidet sich aber in Bezug auf die Geologie
+                und vor allem hinsichtlich ihrer Atmosphäre. Diese besteht zu 96 % aus
+                CO2 und ihr Oberflächendruck ist 90-mal höher als auf der Erde.</p>
+            <br>
+
+            <div class="p2click" onclick="">
+
+            </div>
+            <div class="p2">
+                <p>
+                    Nach dem Mond ist Venus das hellste Gestirn am nächtlichen Himmel.
+                    Weil sie als einer der unteren Planeten nur am Morgen- oder Abendhimmel
+                    sichtbar ist und nie gegen Mitternacht, wird sie auch Morgenstern und
+                    Abendstern genannt. Schon mit einem kleinen Fernrohr ist sie auch am
+                    Taghimmel beobachtbar, manchmal sogar freiäugig. Doch auch bei Erdnähe
+                    (ca. alle 1½ Jahre) lassen sich nur die Wolkenstreifen der äußerst dichten
+                    Atmosphäre erkennen. Die Erkundung der Oberfläche erfordert Radar. <br>
+                    Das astronomische Symbol des Planeten Venus gilt als stilisierte Repräsentation
+                    des Handspiegels der namensgebenden römischen Liebesgöttin Venus: ♀
+                </p>
+            </div>
+        </div>
+
+        <div class="col-sm-7">
+            <div id="venusDiv">
+                <object id="venus" data="../interface/pics/venus.svg" type="image/svg+xml"></object>
             </div>
         </div>
     </div>
@@ -182,9 +241,23 @@
             <p>Die Erde ist der dichteste, fünftgrößte und der Sonne drittnächste
                 Planet des Sonnensystems. Sie ist Ursprungsort und Heimat aller
                 bekannten Lebewesen. Ihr Durchmesser beträgt über 12.700 Kilometer
-                und ihr Alter etwa 4,6 Milliarden Jahre.</p>
-            <br>
-            <br>
+                und ihr Alter etwa 4,6 Milliarden Jahre. Nach der vorherrschenden
+                geochemischen Beschaffenheit der Erde wurde der Begriff der „erdähnlichen
+                Planeten“ geprägt. Das astronomische Symbol der Erde ist ♁</p>
+
+            <div class="p2click">
+            </div>
+            <div class="p2">
+                <p>
+                    Da die Erde aufgrund ihrer zu etwa zwei Dritteln aus Wasser bestehenden
+                    sichtbaren Oberfläche vom All her vorwiegend blau erscheint, wird sie
+                    auch mit Blauer Planet betitelt, in der Astrophysik teils mit
+                    „Pale Blue Dot“ (PBD), „blassblauer Punkt“. Als Himmelskörper der
+                    Menschheit wird der Planet metaphorisch auch als „Raumschiff Erde“ bezeichnet.
+                </p>
+            </div>
+
+
             <h1>Der Mond</h1>
             <p>Der Mond (lateinisch luna) ist der einzige natürliche Satellit der
                 Erde. Sein Name ist etymologisch verwandt mit Monat und bezieht
@@ -192,7 +265,135 @@
                 anderer Planeten des Sonnensystems im übertragenen Sinn meistens
                 ebenfalls als Monde bezeichnet werden, spricht man zur Vermeidung
                 von Verwechslungen mitunter vom Erdmond. Er ist mit einem Durchmesser
-                von 3476 km der fünftgrößte Mond des Sonnensystems.</p>
+                von 3476 km der fünftgrößte Mond des Sonnensystems.<br><br></p>
+        </div>
+
+    </div>
+    <div class="row filler">
+
+    </div>
+    <div id="marsContainer" class="row planetContainer">
+        <div class="col-sm-5 textContainer">
+            <h1>Die Erde</h1>
+            <p>Der Mars ist, von der Sonne aus gezählt, der vierte Planet im Sonnensystem
+                und der äußere Nachbar der Erde. Er zählt zu den erdähnlichen (terrestrischen)
+                Planeten. Sein Durchmesser ist mit knapp 6800 Kilometer etwa halb so groß wie
+                der der Erde, sein Volumen beträgt gut ein Siebtel des Erdvolumens. Damit
+                ist der Mars nach dem Merkur der zweitkleinste Planet des Sonnensystems, hat
+                jedoch eine ausgeprägte Geologie und die höchsten Vulkane des Sonnensystems.
+                Mit einer durchschnittlichen Entfernung von 228 Millionen Kilometern ist er
+                rund 1,5-mal so weit von der Sonne entfernt wie die Erde.</p>
+            <br>
+            <div class="p2click" onclick="">
+
+            </div>
+            <div class="p2">
+                <p>
+                    Die Masse des Mars beträgt etwa ein Zehntel der Erdmasse. Die Fallbeschleunigung
+                    auf seiner Oberfläche beträgt 3,69 m/s², dies entspricht etwa 38 % der irdischen.
+                    Mit einer Dichte von 3,9 g/cm³ weist der Mars den geringsten Wert der
+                    terrestrischen Planeten auf. Deshalb ist die Schwerkraft auf ihm sogar
+                    geringfügig niedriger als auf dem kleineren, jedoch dichteren Merkur.
+                    <br>
+                    <br>
+                    Der Mars wird oft auch als der Rote Planet bezeichnet. Diese Färbung geht
+                    auf Eisenoxid-Staub (Rost) zurück, der sich auf der Oberfläche und in der
+                    dünnen CO2-Atmosphäre verteilt hat. Seine orange- bis blutrote Farbe und
+                    seine Helligkeitsschwankungen sind auch verantwortlich für seine Namensgebung
+                    nach dem römischen Kriegsgott Mars.
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-7">
+            <div id="marsDiv">
+                <object id="mars" data="../interface/pics/mars.svg" type="image/svg+xml"></object>
+            </div>
+        </div>
+    </div>
+    <div class="row filler">
+
+    </div>
+    <div id="jupiterContainer" class="row planetContainer">
+        <div class="col-sm-5 textContainer">
+            <h1>Die Erde</h1>
+            <p>Jupiter ist mit einem Äquatordurchmesser von rund 143.000 Kilometern der größte
+                Planet des Sonnensystems. Mit einer durchschnittlichen Entfernung von 778
+                Millionen Kilometern ist er von der Sonne aus gesehen der fünfte Planet.
+                Er läuft jenseits des Asteroidengürtels um die Sonne und hat keine sichtbare
+                feste Oberfläche. Aufgrund seiner chemischen Zusammensetzung zählt er zu
+                den Gasplaneten („Gasriesen“). Diese Gasriesen bilden im Sonnensystem die
+                Gruppe der äußeren Planeten; sie werden auch als jupiterähnliche (jovianische)
+                Planeten bezeichnet. In dieser Gruppe ist Jupiter der innerste Planet.</p>
+            <br>
+            <div class="p2click" onclick="">
+
+            </div>
+            <div class="p2">
+                <p>
+                    Jupiter ist das dritt- bis vierthellste Objekt des Nachthimmels (nach Mond
+                    und Venus, abhängig von der Bahnkonstellation ist bisweilen auch der Mars
+                    heller). Er ist nach dem römischen Hauptgott Jupiter benannt. In Babylonien
+                    galt er wegen seines goldgelben Lichts als Königsstern (siehe auch Stern
+                    von Betlehem). Sein astronomisches Symbol ist ♃.
+                    <br>
+                    <br>
+                    Am besten ist Jupiter derzeit am Frühlingshimmel zu beobachten. In Opposition
+                    zur Sonne und deshalb besonders gut sichtbar wird Jupiter das nächste Mal
+                    2018 im Mai sein.
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-7">
+            <div id="jupiterDiv">
+                <object id="jupiter" data="../interface/pics/jupiter.svg" type="image/svg+xml"></object>
+            </div>
+        </div>
+    </div>
+    <div class="row filler">
+
+    </div>
+    <div id="saturnContainer" class="row planetContainer">
+        <div class="col-sm-5 textContainer">
+            <h1>Die Erde</h1>
+            <p>Der Saturn ist der sechste Planet des Sonnensystems und mit einem Äquatordurchmesser
+                von etwa 120.500 Kilometern (9,5-facher Erddurchmesser) nach Jupiter der zweitgrößte.
+                Mit 95 Erdmassen hat er jedoch nur 30 % der Masse Jupiters. Wegen seines schon im
+                kleinen Fernrohr sichtbaren Ringes wird er oft auch der Ringplanet genannt.
+                <br>
+                <br>
+                Der Saturn hat eine durchschnittliche Entfernung zur Sonne von knapp 1,43
+                Milliarden Kilometern, seine Bahn verläuft zwischen der von Jupiter und der
+                des sonnenferneren Uranus. Er ist der äußerste Planet, der mit bloßem Auge
+                problemlos erkennbar ist, und war daher schon Jahrtausende vor der Erfindung
+                des Fernrohrs bekannt.
+                <br>
+                <br>
+                In den Jahren 2016–2018 ist er am Frühlings- und Sommerhimmel am besten zu
+                beobachten; seine Opposition fällt zu dieser Zeit in den Juni.</p>
+            <br>
+            <div class="p2click" onclick="">
+
+            </div>
+            <div class="p2">
+                <p>
+                    Er ist ein Gasplanet, dessen untersuchte obere Schichten zu etwa 96 %
+                    Stoffanteil aus Wasserstoff bestehen, und der von allen Planeten des
+                    Sonnensystems die geringste mittlere Dichte (etwa 0,69 g/cm³) aufweist.
+                    Von den anderen Planeten hebt sich der Saturn durch seine besonders
+                    ausgeprägten und schon lange bekannten Ringe ab, die zu großen Teilen
+                    aus Wassereis und Gesteinsbrocken bestehen.
+                    <br>
+                    <br>
+                    Benannt ist der Planet nach dem römischen Gott des Reichtums und der Ernte,
+                    Saturn. Sein astronomisches Symbol ♄ repräsentiert die stilisierte Sichel
+                    des Gottes.
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-7">
+            <div id="saturnDiv">
+                <object id="saturn" data="../interface/pics/saturn.svg" type="image/svg+xml"></object>
+            </div>
         </div>
     </div>
 
@@ -205,71 +406,147 @@
         <div id="formular">
             <form>
                 <div class="col-sm-6">
-                    Vorname<br>
-                    <input class="textInput" type="text" name="lastname" required="required"><br>
-                    Nachname<br>
-                    <input class="textInput" type="text" name="firstname" required="required"><br>
-                    Straße<br>
-                    <input class="textInput" type="text" name="street" required="required"><br>
-                    Ort<br>
-                    <input class="textInput" type="text" name="city" required="required"><br>
-                    Land<br>
-                    <input class="textInput" type="text" name="country" required="required"><br>
-                    PLZ<br>
-                    <input class="textInput" type="text" name="plz" required="required"><br>
-                    Telefon<br>
-                    <input class="textInput" type="text" name="phone"><br>
-                    E-Mail<br>
-                    <input class="textInput" type="text" name="email"><br><br>
-                    <input id="formSubmit" type="submit" value="Submit">
+                    <div class="formElementLeft">
+                        Vorname<span class="required">*</span><br>
+                        <input class="textInput" type="text" name="lastname" required="required">
+                    </div>
+                    <div class="formElementLeft">
+                        Nachname<span class="required">*</span><br>
+                        <input class="textInput" type="text" name="firstname" required="required">
+                    </div>
+                    <div class="formElementLeft">
+                        Straße<span class="required">*</span><br>
+                        <input class="textInput" type="text" name="street" required="required">
+                    </div>
+                    <div class="formElementLeft">
+                        Ort<span class="required">*</span><br>
+                        <input class="textInput" type="text" name="city" required="required">
+                    </div>
+                    <div class="formElementLeft">
+                        Land<span class="required">*</span><br>
+                        <input class="textInput" type="text" name="country" required="required">
+                    </div>
+                    <div class="formElementLeft">
+                        PLZ<span class="required">*</span><br>
+                        <input class="textInput" type="text" name="plz" required="required">
+                    </div>
+                    <div class="formElementLeft">
+                        Telefon<br>
+                        <input class="textInput" type="text" name="phone">
+                    </div>
+                    <div class="formElementLeft">
+                        E-Mail<br>
+                        <input class="textInput" type="email" name="email">
+                    </div>
+                    <div class="formElementLeft">
+                        <input id="formSubmit" type="submit" value="Submit">
+                    </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="formElement">
                         <div class="radioInput">
-                            <input type="radio" value="12" name="months" checked>
+                            <input id="twelve" onchange="setPrice()" type="radio" value="12" name="months"
+                                   checked>
                             12 Monate Abo
                         </div>
                         <div class="radioInput">
-                            <input type="radio" value="6" name="months">
+                            <input id="six" onchange="setPrice()" type="radio" value="6" name="months">
                             6 Monate Abo
                         </div>
                     </div>
                     <div id="preis">
-                        <div id="ohneMwst" class="formElement">
+                        <div id="ohneMwst" class="formElement priceElement">
                             <div class="overviewElement">
-                                EUR <input id="preisOhneMwst" class="priceOutput" type="text" size="3" name="preisOhneMwst" value="" disabled />
+                                EUR <input id="preisOhneMwst" class="priceOutput" type="text" size="5"
+                                           name="preisOhneMwst" value="" disabled/>
                             </div>
                             <div class="overviewElement">
                                 Summe ohne MwSt:
                             </div>
 
                         </div>
-                        <div id="mitMwst" class="formElement">
+                        <div id="mitMwst" class="formElement priceElement">
                             <div class="overviewElement">
-                                EUR <input id="preisMitMwst" class="priceOutput" type="text" size="3" name="preisMitMwst" value="" disabled />
+                                EUR <input id="preisMitMwst" class="priceOutput" type="text" size="5"
+                                           name="preisMitMwst" value="" disabled/>
                             </div>
                             <div class="overviewElement">
                                 Summe mit MwSt:
                             </div>
 
                         </div>
-                        <div id="versand" class="formElement">
+                        <div id="versand" class="formElement priceElement">
                             <div class="overviewElement">
-                                EUR <input id="versandpreis" class="priceOutput" type="text" size="3" name="versandpreis" value="" disabled />
+                                EUR <input id="versandpreis" class="priceOutput" type="text" size="5"
+                                           name="versandpreis" value="" disabled/>
                             </div>
                             <div class="overviewElement">
                                 Versand:
                             </div>
                         </div>
-                        <div id="gesamt" class="formElement">
+                        <div id="gesamt" class="formElement priceElement">
                             <div class="overviewElement">
-                                EUR <input id="gesamtpreis" class="priceOutput" type="text" size="3" name="gesamtpreis" value="" disabled />
+                                EUR <input id="gesamtpreis" class="priceOutput" type="text" size="5" name="gesamtpreis"
+                                           value="" disabled/>
                             </div>
                             <div class="overviewElement">
                                 Gesamt:
                             </div>
+                        </div>
+                        <div id="paymentMethods" class="formElement">
+                            <div class="radioInput2">
+                                <input id="girocard" onchange="setPaymentMethod()" type="radio" value="girocard"
+                                       name="paymentMethod" checked>
+                                <img src="../pictures/girocard.png" width="35%">
+                            </div>
+                            <div class="radioInput2">
+                                <input id="creditcard" onchange="setPaymentMethod()" type="radio" value="creditcard"
+                                       name="paymentMethod">
+                                <img src="../pictures/visamaster.png" width="40%">
+                            </div>
+                            <div class="radioInput2">
+                                <input id="paypal" onchange="setPaymentMethod()" type="radio" value="paypal"
+                                       name="paymentMethod">
+                                <img src="../pictures/paypal.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="girocardContainer" class="unchecked">
+                            <div class="formElementLeft">
+                                Kontoinhaber:<span class="required">*</span><br>
+                                <input class="textInput giroText" type="text" name="kontoinhaber"><br>
+                            </div>
+                            <div class="formElementLeft">
+                                Bankinstitut:<span class="required">*</span><br>
+                                <input class="textInput giroText" type="text" name="bankname"><br>
+                            </div>
+                            <div class="formElementLeft">
+                                BIC:<span class="required">*</span><br>
+                                <input class="textInput giroText" type="text" name="bic"><br>
+                            </div>
+                            <div class="formElementLeft">
+                                IBAN:<span class="required">*</span><br>
+                                <input class="textInput giroText" type="text" name="iban"><br>
+                            </div>
+                        </div>
+                        <div id="creditcardContainer" class="unchecked">
+                            <div class="formElementLeft">
+                                Kontoinhaber:<span class="required">*</span><br>
+                                <input class="textInput creditText" type="text" name="kontoinhaber"><br>
+                            </div>
+                            <div class="formElementLeft">
+                                Kartennummer<span class="required">*</span><br>
+                                <input class="textInput creditText" type="text" name="kartennummer"><br>
+                            </div>
+                            <div class="formElementLeft">
+                                Ablaufdatum<span class="required">*</span><br>
+                                <input class="textInput creditText" type="month" name="ablaufdatum"><br>
+                            </div>
+                        </div>
+                        <div id="paypalContainer" class="unchecked">
 
                         </div>
+
+
                     </div>
                 </div>
             </form>
@@ -284,14 +561,29 @@
     setFontSize();
     moonphases();
     diashow();
+    setPrice();
+    setPaymentMethod();
+    textAkkordion();
 
-    function preisberechnung() {
-        var ohneMwst = document.getElementById("preisOhneMwst");
-        var mitMwst = document.getElementById("preisMitMwst");
-        //test
-        ohneMwst.value = "5";
+    function setLanguage() {
+        var merkurp1 = document.getElementById("merkurp1");
+        var merkurp2 = document.getElementById("merkurp2");
+
+        var userLang = navigator.language || navigator.userLanguage;
+        console.log(userLang);
+        if(userLang == en) {
+            merkurp1.innerHTML = "" +
+                "Mercury is the smallest and innermost planet in the Solar " +
+                "System. Its orbital period around the Sun of 88 days is " +
+                "the shortest of all the planets in the Solar System. It is " +
+                "named after the Roman deity Mercury, the messenger to the gods."
+        }
     }
-    preisberechnung();
+    setLanguage();
+
+
+
+
 </script>
 
 </body>

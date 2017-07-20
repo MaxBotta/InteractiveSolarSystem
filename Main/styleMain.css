@@ -114,37 +114,7 @@ body {
     background-color: #202e3b;
 }
 
-#erde_mond {
-    padding: 10px;
-}
 
-#erdeDiv {
-    margin-top: 15%;
-    margin-left: 25%;
-}
-
-#erde {
-    width: 300px;
-    height: 300px;
-}
-#mondDiv {
-    top: 15%;
-    margin-left: 75%;
-
-    width: 100px;
-    height: 100px;
-    position: absolute;
-}
-
-#mond {
-    width: 100px;
-    height: 100px;
-    top: 50%;
-    left: 50%;
-    margin-left: -50px;
-    margin-top: -50px;
-    position: relative;
-}
 
 .textContainer {
     padding: 50px 25px;
@@ -255,10 +225,87 @@ body {
     margin-top: 20%;
     margin-left: 40%;
 }
+
+#venus {
+    width: 180px;
+    height: 180px;
+}
+#venusDiv {
+    margin-top: 20%;
+    margin-left: 40%;
+}
+
+#erde_mond {
+    padding: 10px;
+}
+
+#erdeDiv {
+    margin-top: 15%;
+    margin-left: 25%;
+}
+
+#erde {
+    width: 250px;
+    height: 250px;
+}
+#mondDiv {
+    top: 15%;
+    margin-left: 65%;
+
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+#mond {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    position: relative;
+}
+
+#mars {
+    width: 200px;
+    height: 200px;
+}
+#marsDiv {
+    margin-top: 20%;
+    margin-left: 40%;
+}
+
+#jupiter {
+    width: 400px;
+    height: 400px;
+}
+#jupiterDiv {
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+#saturn {
+    width: 700px;
+    height: 700px;
+}
+#saturnDiv {
+    margin-top: 5%;
+    margin-left: 0%;
+}
+
+
+
+
 #formularContainer {
     font-family: Montserrat, sans-serif;
     color: #202e3b;
-    padding: 20px 200px;
+    padding: 20px 15%;
+    border: 1px solid red;
+    text-align: center;
+}
+.col-sm-6 {
+    padding: 0px 0px;
 }
 #formTitle {
     text-align: center;
@@ -275,12 +322,17 @@ body {
     border-radius: 5px;
 }
 .radioInput {
-    border: 1px solid red;
     width: 50%;
-    float: right;
+    float: left;
+    text-align: center;
 }
-.col-sm-6 {
-    border: 1px solid red;
+.radioInput2 {
+    width: 33.333%;
+    float: left;
+    text-align: center;
+}
+#paymentMethods {
+    height: 80px;
 }
 
 #formSubmit {
@@ -292,14 +344,20 @@ body {
     border-radius: 5px;
 }
 .formElement {
-    border: 1px solid red;
     margin-top: 10px;
-    text-align: right;
+    text-align: center;
+    min-height: 30px;
+}
+.priceElement {
+    margin-top: 0px;
+}
+.formElementLeft {
+    margin-top: 10px;
+    text-align: center;
     min-height: 30px;
 }
 .overviewElement {
     width: 50%;
-    border: 1px solid red;
     float: right;
 }
 
@@ -307,6 +365,19 @@ body {
     background-color: transparent;
     border: none;
     text-align: right;
+}
+.required {
+    color: #d55353;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.unchecked {
+    display: none;
+}
+
+.checked {
+    display: block;
 }
 
 
